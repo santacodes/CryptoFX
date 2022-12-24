@@ -1,2 +1,5 @@
 # CryptoFX
-A JavaFX Application made to display live crypto prices 
+## A JavaFX Application to display live crypto prices. 
+
+<img alt="HMC" src="demo.png" />
+
