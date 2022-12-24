@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="921.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UIController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="650.0" style="-fx-background-color: #f2a900;" text="Bitcoin " VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="bitcoin" alignment="CENTER" prefHeight="103.0" prefWidth="650.0" style="-fx-background-color: #f2a900;" text="BTC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="650.0" style="-fx-background-color: #3c3c3d;" text="Ethereum" textFill="#e4e4e4">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="ethereum" alignment="CENTER" layoutX="10.0" layoutY="86.0" prefHeight="103.0" prefWidth="650.0" style="-fx-background-color: #3c3c3d;" text="ETH" textFill="#faff6c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="65.0" prefWidth="652.0" style="-fx-background-color: #f3ba2f;" text="Binance">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="binance" alignment="CENTER" layoutX="10.0" layoutY="267.0" prefHeight="118.0" prefWidth="652.0" style="-fx-background-color: #f3ba2f;" text="BNB">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <Label prefHeight="97.0" prefWidth="504.0" style="-fx-background-color: teal;" text=" - Made by santacodes (Santhosh)" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Monospaced Bold" size="17.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#mouseevent" prefHeight="33.0" prefWidth="133.0" style="-fx-background-color: white;" text="Click to Refresh" />
+         </graphic>
+      </Label>
+   </bottom>
+</BorderPane>
